@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    count: 1
+    count: 0
   };
 
 //   constructor(){
@@ -33,7 +33,7 @@ class Counter extends Component {
   }
 
   getAlertClasses(){
-      let classes = "alert m-2 alert-";
+      let classes = "bg m-2 bg-";
       classes += this.state.count === 0 ? "warning" : "primary";
       return classes;
   }
